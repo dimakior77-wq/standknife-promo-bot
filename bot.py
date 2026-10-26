@@ -34,7 +34,7 @@ async def handle_new_message(event):
         if image_path:
             pil_image = Image.open(image_path)
             response = ai_client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-3.8-flash',
                 contents=[
                     pil_image,
                     "Найди на этой картинке промокод для игры Standoff 2. Верни ТОЛЬКО сам промокод без лишних слов. Если его нет, напиши NONE."
